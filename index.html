@@ -11,7 +11,7 @@
     <title>Gym Website</title>
 </head>
 <body>
-    <div class="container-fluid bg">
+    <div class="container-fluid bg" style="overflow: hidden;">
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
             <div class="container-fluid">
                 <a class="navbar-brand text-white" href="index.html"><img src="./assert/Untitled design (1).png"
@@ -54,7 +54,7 @@
     <div class="container-fluid bg-black2">
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-lg-4 col-md-6">
                     <i>
                         <div class="h4 text-yellow fw-bolder p">ABOUT OUR FIT FAMILY</div>
                     </i>
@@ -63,7 +63,7 @@
                         expanded to over 115 locations nationwide!</p>
                     <button class="btn btn-join text-center">Learn More</button>
                 </div>
-                <div class="col-8">
+                <div class="col-lg-8 col-md-6">
                     <img src="./assert/services.jpg" class="img" alt="">
                     <img src="./assert/services2.jpg" class="img2" alt="">
                 </div>
@@ -73,20 +73,20 @@
     <!-- image Section -->
     <div class="container-fluid bg-black boxheight">
         <div class="container">
-            <div class="row">
-                <div class="col-4">
+            <div class="row gy-md-4">
+                <div class="col-lg-4 col-md-6">
                     <img src="./assert/about.webp" alt="boximages" class="image1">
                     <div class="h5 text-white text-center">
                         TOUR OUR GYM
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-md-6">
                     <img src="./assert/t (1).webp" alt="boximages" class="image2">
                     <div class="h5 text-white text-center">
                         CHECK OUT OUR
                         GROUP CLASSES</div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-md-12">
                     <img src="./assert/t (2).webp" alt="boximages" class="image3">
                     <div class="h5 text-white text-center">ASK
                         ABOUT
@@ -95,7 +95,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-black2 pt-5">
+    <div class="container-fluid bg-black2 pt-lg-5 pt-md-5 imageSection2">
         <div class="h3 text-center text-yellow py-5">BEFORE AND AFTER</div>
         <div class="container">
             <div class="row">
@@ -119,35 +119,37 @@
         <div class="container">
             <div class="h1 text-center text-white fw-bolder fs-1 py-4">Contact Us</div>
             <form class="row gy-4 gx-lg-5">
-                <div class="col-md-6">
+                <div class="col-lg-6 col-md-12">
                     <label for="inputFirstName" class="form-label">First Name</label>
                     <input type="text" class="form-control" id="inputName" placeholder="Enter your first name" required>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6 col-md-12">
                     <label for="inputLastName" class="form-label">Last Name</label>
                     <input type="text" class="form-control" id="inputName" placeholder="Enter your last name" required>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6 col-md-12">
                     <label for="inputPassword4" class="form-label">Password</label>
                     <input type="password" class="form-control" id="inputPassword4" placeholder="Enter your password"
                         required>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6 col-md-12">
                     <label for="inputPassword4" class="form-label">Confirm Password</label>
                     <input type="password" class="form-control" id="inputPassword4"
                         placeholder="Enter your confirm password" required>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6 col-md-12">
                     <label for="inputAddress" class="form-label">Email</label>
                     <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email" required>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6 col-md-12">
                     <label for="inputNumber" class="form-label">Contact Number</label>
-                    <input type="number" max="11" class="form-control" id="inputNumber"
+                    <input type="text" max="11" class="form-control" id="inputNumber"
                         placeholder="Enter your contact number" required>
                 </div>
-                <div class="col-lg-12 my-4">
-                    <a href="mailto:naumanyousaf181@gmail.com"><button type="button" class="btn btn-primary px-4 py-2 fw-bolder">Sign in</button></a>
+                <div class="col-lg-6 col-md-12 my-lg-4 my-md-5">
+                    <a href="mailto:naumanyousaf181@gmail.com">
+                        <button type="button" class="btn btn-primary px-lg-4 py-lg-2 py-md-2 fw-bolder fw-md-bolder footer-btn">Sign Up</button>
+                    </a>
                 </div>
             </form>
         </div>
@@ -156,44 +158,44 @@
 
 </body>
 <!-- bootstrap js file connect -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
 <script>
     //to padding the top container-fluid class first initialize here then apply padding
-    let imageBox = document.querySelector("body > div.container-fluid:nth-child(5)").style.padding = '50px 0px 0px 0px!important;';
+    // let imageBox = document.querySelector("body > div.container-fluid:nth-child(5)").style.padding = '50px 0px 0px 0px!important;';
 
     // image box intialize here
-    let box1 = document.querySelector(".image1");
-    let box2 = document.querySelector(".image2");
-    let box3 = document.querySelector(".image3");
+    // let box1 = document.querySelector(".image1");
+    // let box2 = document.querySelector(".image2");
+    // let box3 = document.querySelector(".image3");
     // images content initialize here
-    let content1 = document.querySelector("body > div.container-fluid.bg-black.boxheight > div > div > div:nth-child(1) > div");
-    let content2 = document.querySelector("body > div.container-fluid.bg-black.boxheight > div > div > div:nth-child(2) > div");
-    let content3 = document.querySelector("body > div.container-fluid.bg-black.boxheight > div > div > div:nth-child(3) > div");
+    // let content1 = document.querySelector("body > div.container-fluid.bg-black.boxheight > div > div > div:nth-child(1) > div");
+    // let content2 = document.querySelector("body > div.container-fluid.bg-black.boxheight > div > div > div:nth-child(2) > div");
+    // let content3 = document.querySelector("body > div.container-fluid.bg-black.boxheight > div > div > div:nth-child(3) > div");
     
         // box1 image eventlistener mouseenter
-        box1.addEventListener("mouseenter", function () {
-            // content1.style.display = 'block';
-            content1.classList.add("display");
-        });
+        // box1.addEventListener("mouseenter", function () {
+        //     // content1.style.display = 'block';
+        //     content1.classList.add("display");
+        // });
     
         
         
         
     
     // box2 image eventlistener mouseenter
-    box2.addEventListener("mouseenter", function () {
-        content2.classList.add("display2");
-    });
+    // box2.addEventListener("mouseenter", function () {
+    //     content2.classList.add("display2");
+    // });
     
     
     
     
     // box3 image eventlistener mouseenter
-    box3.addEventListener("mouseenter", function () {
-        content3.classList.add("display3");
-    });
+    // box3.addEventListener("mouseenter", function () {
+    //     content3.classList.add("display3");
+    // });
     // box3 image eventlistener mouseout
     
     //end here image eventlistener list
